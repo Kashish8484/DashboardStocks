@@ -2,7 +2,6 @@ import streamlit as st
 import yfinance as yf
 import pandas as pd
 import ta
-import winsound
 from datetime import datetime
 import time
 
@@ -46,7 +45,7 @@ st.markdown(
 # =========================
 def strong_alert():
     for _ in range(5):
-        winsound.Beep(2500, 500)
+        st.audio("https://www.soundjay.com/buttons/sounds/beep-01a.mp3")
 
 # =========================
 # GET YESTERDAY CLOSE
